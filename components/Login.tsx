@@ -21,6 +21,7 @@ export default function Login() {
         secureTextEntry
       />
       <Button
+        color="#D91656"
         title="logar"
         onPress={() => {
           console.log("username: " + textUser);
@@ -33,9 +34,13 @@ export default function Login() {
 
 const holder = StyleSheet.create({
   input: {
-    height: 40,
+    height: 60,
     margin: 12,
     borderWidth: 1,
     padding: 10,
+  },
+  button: {
+    height: 40,
+    flex: 1,
   },
 });
