@@ -23,10 +23,12 @@ export default function MainCard({
   return (
     <Card>
       <View style={styles.container}>
-        <Text>{title}</Text>
-        <Text>{participating}/10 Participating</Text>
+        <Text style={{ fontWeight: "bold", fontSize: 16 }}>{title}</Text>
+        <Text style={{ color: "rgb(150 150 150)" }}>
+          {participating}/10 Participating
+        </Text>
 
-        <Image source={{ uri: imgUrl }} width={100} height={100} />
+        <Image source={{ uri: imgUrl }} width={150} height={150} />
 
         <View style={styles.statsContainer}>
           <View style={styles.icon}>
@@ -56,6 +58,7 @@ const styles = StyleSheet.create({
   container: {
     alignItems: "center",
     gap: 16,
+    width: "100%",
   },
   statsContainer: {
     flexDirection: "row",
@@ -84,5 +87,10 @@ const styles = StyleSheet.create({
   },
   footer: {
     backgroundColor: "rgb(255 166 36)",
+    width: "100%", // garante que preencha a largura
+    alignItems: "center",
+    paddingVertical: 8,
+    borderBottomLeftRadius: 8,
+    borderBottomRightRadius: 8,
   },
 });

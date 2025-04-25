@@ -10,5 +10,6 @@ const styles = StyleSheet.create({
     backgroundColor: "rgb(249 249 249)",
     padding: 16,
     borderRadius: 12,
+    overflow: "hidden",
   },
 });
