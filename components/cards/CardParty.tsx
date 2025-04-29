@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, Image } from "react-native";
+import { View, Text, StyleSheet, Image, DimensionValue } from "react-native";
 import React from "react";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import Card from "../Card";
@@ -11,8 +11,8 @@ type CardPartyProps = {
   itemUrl: string;
   level: number;
   functionP: string;
-  hp: string;
-  mana: string;
+  hp: DimensionValue | undefined;
+  mana: DimensionValue | undefined;
 };
 
 export default function CardParty({
